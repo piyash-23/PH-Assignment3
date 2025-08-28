@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "hind madurai";
+  max-width: 1920px;
+}
+/* header design */
+header {
+  height: 100px;
+  width: 1750px;
+  margin: 0 auto;
+}
+#logoImg {
+  width: 50px;
+  height: 50px;
+}
+.logoText {
+  line-height: 1;
+  font-weight: 800;
+  color: #006747;
+}
+.coins,
+.heart {
+  background-color: rgba(65, 255, 106, 0.1);
+  height: 52px;
+  border-radius: 50px;
+  font-family: "Inter";
+  font-weight: 900;
+}
+.uniBtn {
+  background-color: #00a63e;
+  color: white;
+  width: 120px;
+  border-radius: 50px;
+}
+/* hero sec */
+main {
+  margin: 0 auto;
+  background-color: rgba(65, 255, 106, 0.1);
+}
+.hero {
+  width: 100%;
+  height: 240px;
+  background: linear-gradient(to right, #013223, #006747, #013223);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "hind madurai";
+  color: white;
+}
+.hero img {
+  width: 92px;
+}
+/* card design */
+.mainService {
+  width: 95%;
+  margin: 0px auto;
+  padding: 20px 0px;
+}
+.services {
+  width: 75%;
+  row-gap: 25px;
+}
+.card {
+  background-color: #ffffff;
+  width: 400px;
+  border-radius: 12px;
+  padding: 20px 15px;
+  box-shadow: 0px 1px 3px gray, 0px -1px 5px rgba(65, 255, 106, 0.1);
+}
+.image {
+  padding: 10px;
+  background-color: #ffe3e2;
+  border-radius: 16px;
+}
+.image:nth-child(2) {
+  border-color: #c0d8f0;
+}
+.cardImg {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.cardImg img {
+  width: 30px;
+}
+.heartBtn {
+  color: #5c5c5c;
+  cursor: pointer;
+}
+.cardHead {
+  font-family: "Hind Madurai";
+  font-weight: 800;
+  font-size: 24px;
+}
+.card p {
+  font-family: "Inter";
+  color: #5c5c5c;
+  font-size: 18px;
+}
+.call {
+  font-family: "Inter";
+  font-size: 32px;
+  color: #111111;
+  font-weight: 700;
+}
+.title {
+  font-family: "Inter";
+  font-size: 18px;
+  padding: 6px 10px;
+  background-color: #f2f2f2;
+  border-radius: 15px;
+  display: inline-block;
+}
+.actionBtn {
+  margin-top: 20px;
+}
+#copyBtn {
+  background: transparent;
+  color: #5c5c5c;
+  width: 170px;
+  padding: 10px 0px;
+  border: 1px solid #5c5c5c;
+  border-radius: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+#call {
+  width: 170px;
+  background-color: #00a63e;
+  color: white;
+  padding: 10px 0px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+/* history */
+.history {
+  width: 20%;
+}
