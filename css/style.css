@@ -145,6 +145,10 @@ main {
   border-radius: 10px;
   cursor: pointer;
 }
+#call:hover {
+  background-color: #8f8e8e;
+  transition: 0.2s ease;
+}
 /* history */
 .history {
   width: 25%;
