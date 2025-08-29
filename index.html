@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emergency Service</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link
       rel="stylesheet"
@@ -36,17 +37,19 @@
             ><img class="w-[24px]" src="./assets/coin.png" alt="Coin"
           /></span>
         </button>
-        <p class="uniBtn copy flex justify-center items-center font-semibold">
-          <span class="copied"> 0 </span> Copy
-        </p>
+        <h5 class="uniBtn copy flex justify-center items-center font-semibold">
+          <span class="copied">0</span>&nbsp;Copy
+        </h5>
       </div>
     </header>
     <!-- main section -->
     <main>
       <div class="hero">
         <img src="./assets/logo-dark.png" alt="" />
-        <h3 class="text-[40px] font-bold">Emergency Service Directory</h3>
-        <h4>
+        <h3 class="heroText text-[40px] font-bold">
+          Emergency Service Directory
+        </h3>
+        <h4 class="heroSub">
           Government Emergency Services at Your Fingertip – A Project by
           Government of the People’s Republic of Bangladesh
         </h4>
@@ -117,7 +120,7 @@
           <div class="card">
             <div class="cardImg">
               <div class="image">
-                <img src="./assets/emergency.png" alt="Emergency Service" />
+                <img src="./assets/ambulance.png" alt="Emergency Service" />
               </div>
               <button class="heartBtn">
                 <i class="fa-regular fa-heart"></i>
@@ -197,7 +200,7 @@
           <div class="card">
             <div class="cardImg">
               <div class="image">
-                <img src="./assets/emergency.png" alt="Emergency Service" />
+                <img src="./assets/brac.png" alt="Emergency Service" />
               </div>
               <button class="heartBtn">
                 <i class="fa-regular fa-heart"></i>
@@ -217,7 +220,10 @@
           <div class="card">
             <div class="cardImg">
               <div class="image">
-                <img src="./assets/emergency.png" alt="Emergency Service" />
+                <img
+                  src="./assets/Bangladesh-Railway.png"
+                  alt="Emergency Service"
+                />
               </div>
               <button class="heartBtn">
                 <i class="fa-regular fa-heart"></i>
@@ -240,16 +246,20 @@
             <p class="callHistory text-lg">
               <i class="fa-regular fa-clock"></i> Call history
             </p>
-            <button class="uniBtn text-lg cursor-pointer">Clear</button>
+            <button id="clearBtn" class="uniBtn text-lg cursor-pointer">
+              Clear
+            </button>
           </div>
           <div class="dynamicHistory">
-            <div class="callers">
-              <h3 class="content">National Emergency Number</h3>
-              <p class="callNum">999</p>
-            </div>
-            <div class="time">
-              <p>10-12-2003</p>
-            </div>
+            <!-- <div class="dynamicCard">
+              <div class="callers">
+                <h3 class="content">National Emergency Number</h3>
+                <p class="callNum">999</p>
+              </div>
+              <div class="time">
+                <p>10-12-2003</p>
+              </div>
+            </div> -->
           </div>
         </div>
       </div>

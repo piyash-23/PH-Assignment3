@@ -19,8 +19,8 @@ let alertIndex = document.querySelectorAll(".call");
 let historyDiv = document.querySelector(".dynamicHistory");
 for (let call of calls) {
   call.addEventListener("click", () => {
-    coins -= 20;
-    if (coins == 20 || coins > 20) {
+    if (coins >= 20) {
+      coins -= 20;
       decreaseCoins.innerText = coins;
     } else if (coins < 20) {
       let alerBox = alert("Your are running out of coins");
@@ -28,19 +28,22 @@ for (let call of calls) {
     }
     let subtitle = call.closest(".card").querySelector(".subtitle").textContent;
     let closeCall = call.closest(".card").querySelector(".call").textContent;
-    alert(`Calling ${subtitle} ${closeCall}.....`);
+    let cardHead = call.closest(".card").querySelector(".cardHead").textContent;
+    alert(`📞 Calling ${subtitle} ${closeCall}.....`);
     let today = new Date();
     let time = `${today.getHours()}:${today.getMinutes()}:${today.getSeconds()}`;
-    let dynamicText = `
-      <div class="callers">
-              <h3 class="content">${subtitle}</h3>
-              <p class="callNum">${closeCall}</p>
-            </div>
-            <div class="time">
-              <p>${time}</p>
-            </div>
+    let dynamicCard = document.createElement("div");
+    dynamicCard.classList.add("dynamicCard");
+    dynamicCard.innerHTML = `
+     <div class="callers">
+                <h3 class="content">${cardHead}</h3>
+                <p class="callNum">${closeCall}</p>
+              </div>
+              <div class="time">
+                <p>${time}</p>
+              </div>
     `;
-    historyDiv.append(dynamicText);
+    historyDiv.append(dynamicCard);
     console.log(time);
   });
 }
@@ -62,3 +65,10 @@ for (let num of copyBtn) {
     navigator.clipboard.writeText(closeNum);
   });
 }
+
+// clear button
+
+let clearBtn = document.querySelector("#clearBtn");
+clearBtn.addEventListener("click", () => {
+  historyDiv.innerHTML = "";
+});

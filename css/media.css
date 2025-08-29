@@ -1,0 +1,34 @@
+@media screen and (max-width: 640px) {
+  body {
+    max-width: 100%;
+  }
+  .mainService {
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  header {
+    flex-direction: column;
+    height: 150px;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .hero {
+    text-align: center;
+  }
+  .heroText {
+    font-size: 35px;
+  }
+  .heroSub {
+    font-size: 14px;
+  }
+  .services {
+    grid-template-columns: 100%;
+    margin: 0 auto;
+  }
+  .history {
+    width: 70%;
+    height: 400px;
+  }
+}
