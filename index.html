@@ -25,18 +25,20 @@
       </div>
       <div class="btnsec flex gap-2">
         <button class="heart flex justify-center items-center gap-2 w-[123px]">
-          0
+          <span class="counIncrease">0</span>
           <span
             ><img class="w-[30px]" src="./assets/heart.png" alt="Heart"
           /></span>
         </button>
         <button class="coins flex justify-center items-center gap-2 w-[123px]">
-          100
+          <span class="decreaseCoins">100</span>
           <span
             ><img class="w-[24px]" src="./assets/coin.png" alt="Coin"
           /></span>
         </button>
-        <div class="uniBtn copy flex justify-center items-center">0 Copy</div>
+        <p class="uniBtn copy flex justify-center items-center font-semibold">
+          <span class="copied"> 0 </span> Copy
+        </p>
       </div>
     </header>
     <!-- main section -->
@@ -62,7 +64,7 @@
               </button>
             </div>
             <h2 class="cardHead">National Emergency Number</h2>
-            <p>National Emergency</p>
+            <p class="subtitle">National Emergency</p>
             <h3 class="call">999</h3>
             <p class="title">All</p>
             <div class="actionBtn">
@@ -74,7 +76,7 @@
           </div>
           <div class="card">
             <div class="cardImg">
-              <div class="image">
+              <div class="image blue">
                 <img src="./assets/police.png" alt="Emergency Service" />
               </div>
               <button class="heartBtn">
@@ -82,7 +84,7 @@
               </button>
             </div>
             <h2 class="cardHead">Police Helpline Number</h2>
-            <p>Police</p>
+            <p class="subtitle">Police</p>
             <h3 class="call">999</h3>
             <p class="title">Police</p>
             <div class="actionBtn">
@@ -102,7 +104,7 @@
               </button>
             </div>
             <h2 class="cardHead">Fire Service Number</h2>
-            <p>Fire Service</p>
+            <p class="subtitle">Fire Service</p>
             <h3 class="call">999</h3>
             <p class="title">Fire</p>
             <div class="actionBtn">
@@ -122,7 +124,7 @@
               </button>
             </div>
             <h2 class="cardHead">Ambulance Service</h2>
-            <p>Ambulance</p>
+            <p class="subtitle">Ambulance</p>
             <h3 class="call">1994-999999</h3>
             <p class="title">Health</p>
             <div class="actionBtn">
@@ -142,7 +144,7 @@
               </button>
             </div>
             <h2 class="cardHead">Women & Child Helpline</h2>
-            <p>Women & Child Helpline</p>
+            <p class="subtitle">Women & Child Helpline</p>
             <h3 class="call">109</h3>
             <p class="title">Help</p>
             <div class="actionBtn">
@@ -162,7 +164,7 @@
               </button>
             </div>
             <h2 class="cardHead">Anti-Corruption Helpline</h2>
-            <p>Anti-Corruption</p>
+            <p class="subtitle">Anti-Corruption</p>
             <h3 class="call">106</h3>
             <p class="title">Govt.</p>
             <div class="actionBtn">
@@ -182,7 +184,7 @@
               </button>
             </div>
             <h2 class="cardHead">Electricity Helpline</h2>
-            <p>Electricity Outage</p>
+            <p class="subtitle">Electricity Outage</p>
             <h3 class="call">16216</h3>
             <p class="title">Electricity</p>
             <div class="actionBtn">
@@ -202,7 +204,7 @@
               </button>
             </div>
             <h2 class="cardHead">Brac Helpline</h2>
-            <p>Brac</p>
+            <p class="subtitle">Brac</p>
             <h3 class="call">16445</h3>
             <p class="title">NGO</p>
             <div class="actionBtn">
@@ -222,7 +224,7 @@
               </button>
             </div>
             <h2 class="cardHead">Bangladesh Railway Helpline</h2>
-            <p>Bangladesh Railway</p>
+            <p class="subtitle">Bangladesh Railway</p>
             <h3 class="call">163</h3>
             <p class="title">Travel</p>
             <div class="actionBtn">
@@ -233,7 +235,23 @@
             </div>
           </div>
         </div>
-        <div class="history"></div>
+        <div class="history">
+          <div class="hisHeading">
+            <p class="callHistory text-lg">
+              <i class="fa-regular fa-clock"></i> Call history
+            </p>
+            <button class="uniBtn text-lg cursor-pointer">Clear</button>
+          </div>
+          <div class="dynamicHistory">
+            <div class="callers">
+              <h3 class="content">National Emergency Number</h3>
+              <p class="callNum">999</p>
+            </div>
+            <div class="time">
+              <p>10-12-2003</p>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
     <!-- script -->

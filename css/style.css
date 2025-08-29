@@ -35,7 +35,7 @@ header {
 .uniBtn {
   background-color: #00a63e;
   color: white;
-  width: 120px;
+  padding: 10px 25px;
   border-radius: 50px;
 }
 /* hero sec */
@@ -62,6 +62,7 @@ main {
   width: 95%;
   margin: 0px auto;
   padding: 20px 0px;
+  display: flex;
 }
 .services {
   width: 75%;
@@ -79,8 +80,8 @@ main {
   background-color: #ffe3e2;
   border-radius: 16px;
 }
-.image:nth-child(2) {
-  border-color: #c0d8f0;
+.blue {
+  background-color: #ddeaf7;
 }
 .cardImg {
   display: flex;
@@ -141,5 +142,36 @@ main {
 }
 /* history */
 .history {
-  width: 20%;
+  width: 25%;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 1px 3px gray, 0px -1px 5px rgba(65, 255, 106, 0.1);
+}
+.hisHeading {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+}
+.callHistory {
+  display: inline-block;
+}
+.dynamicHistory {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+}
+.content {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 18px;
+}
+.callNum {
+  font-family: "Hind Madurai";
+  font-weight: 18px;
+  color: #5c5c5c;
+}
+.time {
+  font-family: "Hind Madurai";
+  color: #111111;
 }
